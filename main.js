@@ -8,5 +8,8 @@ function result() {
     if (document.getElementById('correct6').checked) { score++; }
     if (document.getElementById('correct7').checked) { score++; }
     if (document.getElementById('correct8').checked) { score++; }
-    alert("sua pontuação é: " + score);
+    var scoreElement = document.getElementById('score');
+    console.log(document.getElementById('score'))
+    scoreElement.innerHTML = 'Seu score foi ' + score;
 }
+
